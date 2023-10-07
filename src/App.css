@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Nunito&display=swap");
+.App {
+  text-align: lett;
+  color: #113946;
+  font-size: 1.2em;
+  font-family: "Average Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+.page {
+  width: 80%;
+  background-color: #fff2d8;
+  padding: 0.5em 1em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 20px;
+  width: 100%;
+  left: 0;
+  transform: rotate(180deg);
+  background: url("../public/assets/page-torn.svg");
+  background-size: 200%;
+}
+
+div.polaroid {
+  border-radius: 5px;
+  width: 80%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+div.container {
+  text-align: left;
+  font-size: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.polaroid-img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
